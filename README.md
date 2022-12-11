@@ -1,14 +1,11 @@
 # bulletin-board
-ログイン式掲示板を作成してみました。
-
+ログイン式掲示板を作成してみました。  
 今後も、勉強や経験を重ねて、この掲示板をアップデートさせる予定です。
 
 ## 開発環境 
-  ・Microsoft .NET Framework 4.8
-  
-  ・C#
-  
-  ・SQLserver
+  ・Microsoft .NET Framework 4.8  
+  ・C#  
+  ・SQLserver  
   
 ## 実装した機能
 
