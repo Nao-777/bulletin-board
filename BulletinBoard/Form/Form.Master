@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Form.master.cs" Inherits="Board.BulletinBoard.Form.Form" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <style>
+        .bForm{
+
+        }
+        .dMain{
+            
+            text-align:center;
+        }
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="dMain">
+            <h1 id="pTitle_h1">掲示板へようこそ！</h1><br />
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            <!--それぞれのページで記述する-->
+            </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainPage.master.cs" Inherits="Board.BulletinBoard.MainPage.MainPage" %>
+
+<!DOCTYPE html>
+
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <style>
+        .MainPageClass{
+            display:flex;
+        }
+        .InputForm{
+            width:30%;
+            height:auto;
+            text-align:center;
+            padding: 0.5em 1em;
+            margin-top: 2em;
+            margin-right:1em;
+            font-weight: bold;
+            color: black;/*文字色*/
+            background: #f7f7f7;
+            border: solid 3px #6091d3;/*線*/
+            border-radius: 10px;/*角の丸み*/
+        }
+        .MainDisplay{
+            width:70%;
+
+            padding: 0.5em 1em;
+            margin: 2em 0;
+            font-weight: bold;
+            color: black;/*文字色*/
+            background: #f7f7f7;
+            border: solid 3px #6091d3;/*線*/
+            border-radius: 10px;/*角の丸み*/
+        }
+
+    </style>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="MainPageClass">
+        <div  class="InputForm">
+            <asp:ContentPlaceHolder id="cInputForm" runat="server">
+                <!--ユーザからの入力を取得する場所-->
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="MainDisplay">
+             <asp:ContentPlaceHolder id="cMainDisplay" runat="server">
+                <!--主に取得してきたデータを表示する場所-->
+            </asp:ContentPlaceHolder>
+        </div>
+        
+    </div>
+    </form>
+</body>
+</html>
+
+
